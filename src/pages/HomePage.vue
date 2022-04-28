@@ -9,58 +9,23 @@
   </Parallax>
   <div class="relative mt-[100vh] bg-white z-10 border-t-8 border-indigo-400 px-8 lg:px-0">
     <div class="max-w-screen-lg py-16 mx-auto">
-      <section class="mt-16">
-        <div>
-          <h2 class="text-4xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text">
-            Parcours Professionel
-          </h2>
-        </div>
-        <Grid class="mt-4">
-          <div
-            v-for="div in 6"
-            :key="div"
-            class=" bg-indigo-50 h-52 rounded-md"
-          />
-        </Grid>
-      </section>
-      <section class="mt-16">
-        <div>
-          <h2 class="text-4xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text">
-            Compétences
-          </h2>
-        </div>
-        <Grid class="mt-4">
-          <div
-            v-for="div in 6"
-            :key="div"
-            class=" bg-indigo-50 h-52 rounded-md"
-          />
-        </Grid>
-      </section>
-      <section class="mt-16">
-        <div>
-          <h2 class="text-4xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text">
-            Hobbies
-          </h2>
-        </div>
-        <Grid class="mt-4">
-          <div
-            v-for="div in 6"
-            :key="div"
-            class=" bg-indigo-50 h-52 rounded-md"
-          />
-        </Grid>
-      </section>
+      <Me />
+      <Parcours />
+      <Competences />
+      <Hobbies />
     </div>
   </div>
 </template>
 
 <script>
-import Grid from '@/components/global/Grid.vue'
 import Parallax from '@/components/global/Parallax.vue'
+import Me from '@/sections/Me.vue'
+import Competences from '@/sections/Competences.vue'
+import Hobbies from '@/sections/Hobbies.vue'
+import Parcours from '@/sections/Parcours.vue'
 
 export default {
-	components: { Grid, Parallax },
+	components: { Parallax, Me, Hobbies, Competences, Parcours },
 
 }
 </script>
