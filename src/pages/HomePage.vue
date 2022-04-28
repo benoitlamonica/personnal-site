@@ -7,8 +7,8 @@
       <small class="block text-xl font-light">Web Developper (Not Designer)</small>
     </div>
   </Parallax>
-  <div class="relative mt-[100vh] bg-white z-10 border-t-8 border-indigo-400 px-8 lg:px-0">
-    <div class="max-w-screen-lg py-16 mx-auto">
+  <div class="relative mt-[100vh] bg-white z-10 border-t-8 border-indigo-400 px-8 xl:px-0">
+    <div class="max-w-screen-xl py-16 mx-auto">
       <Me />
       <Parcours />
       <Competences />
@@ -26,6 +26,5 @@ import Parcours from '@/sections/Parcours.vue'
 
 export default {
 	components: { Parallax, Me, Hobbies, Competences, Parcours },
-
 }
 </script>

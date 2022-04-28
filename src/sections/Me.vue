@@ -5,20 +5,33 @@
         Qui suis-je ?
       </h2>
     </div>
-    <Grid class="mt-4">
-      <div
-        v-for="div in 6"
-        :key="div"
-        class=" bg-indigo-50 h-52 rounded-md"
-      />
-    </Grid>
+    <div class="flex gap-8 font-light mt-4 flex-wrap md:flex-nowrap">
+      <div class="min-w-[300px] w-1/2 grow rounded-lg shadow-md shadow-indigo-300 overflow-hidden">
+        <img
+          :src="data.img"
+          alt="Imade de moi même"
+          class="h-full w-full object-cover"
+        >
+      </div>
+      <div class="w-1/2 grow text-lg">
+        <p>
+          {{ data.textFR }}
+        </p>
+        <p class="mt-8">
+          {{ data.textENG }}
+        </p>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
-import Grid from '@/components/global/Grid.vue'
+import data from '@/data/about-me'
 export default {
-	components: { Grid },
-
+	setup() {
+		return {
+			data
+		}
+	}
 }
 </script>

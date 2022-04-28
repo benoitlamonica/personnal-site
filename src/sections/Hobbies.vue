@@ -1,24 +1,16 @@
 <template>
-  <section class="mt-16">
+  <section class="mt-32">
     <div>
       <h2 class="text-4xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text">
         Hobbies
       </h2>
     </div>
-    <Grid class="mt-4">
-      <div
-        v-for="div in 6"
-        :key="div"
-        class=" bg-indigo-50 h-52 rounded-md"
-      />
-    </Grid>
+    <p>
+      Passionné de musique, adore courrir et surtout rire !
+    </p>
   </section>
 </template>
 
 <script>
-import Grid from '@/components/global/Grid.vue'
-export default {
-	components: { Grid },
-
-}
+export default {}
 </script>
