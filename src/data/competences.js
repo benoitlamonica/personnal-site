@@ -32,7 +32,7 @@ export default [
 	{
 		name: 'Vue',
 		icon: 'vue',
-		level: 5,
+		level: 4,
 		color: '#3EB37F'
 	},
 	{
