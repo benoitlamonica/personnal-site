@@ -15,9 +15,9 @@
           {{ name }}
         </h2>
         <div><span class="font-medium text-indigo-600">Poste :</span> {{ position }}</div>
-        <div><span class="font-medium text-indigo-600">Date de début :</span> {{ startDate }}</div>
+        <div><span class="font-medium text-indigo-600">Date de début :</span> {{ formatDate(startDate) }}</div>
         <div v-if="endDate">
-          <span class="font-medium text-indigo-600">Date de fin :</span> {{ endDate }}
+          <span class="font-medium text-indigo-600">Date de fin :</span> {{ formatDate(endDate) }}
         </div>
         <div
           v-else
@@ -41,11 +41,13 @@ import Grid from '@/components/global/Grid.vue'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import data from '@/data/parcour-pro'
+import {formatDate} from '@/composables/date'
 export default {
 	components: { Grid },
 	setup() {
 		return {
-			data
+			data,
+			formatDate
 		}
 	},
 	mounted() {
