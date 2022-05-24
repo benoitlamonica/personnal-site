@@ -23,7 +23,7 @@
         Next
       </button>
     </div>
-    <div class="relative overflow-hidden max-w-screen-xl mx-auto">
+    <div class="relative overflow-hidden max-w-screen-xl mx-auto rounded-lg shadow-md shadow-indigo-400 mt-20">
       <transition-group
         enter-active-class="transition duration-1000"
         :enter-from-class="`transform ${direction === 'next' && 'translate-x-full'} ${direction === 'previous' && '-translate-x-full'}`"
@@ -36,7 +36,7 @@
           v-for="{name, color, content}, i in oos"
           v-show="currentActiveIndex === i"
           :key="i"
-          class="bg-indigo-50 rounded-lg shadow-md shadow-indigo-400 max-w-screen-xl mx-auto mt-20 p-8"
+          class="bg-indigo-50 max-w-screen-xl mx-auto p-8"
         >
           <OOS
             :content="content"
