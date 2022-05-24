@@ -8,7 +8,7 @@ module.exports = {
 		plugin(function({addBase, theme}) {
 			addBase({
 				'a:hover': {
-					color: theme('colors.slate[500]'),
+					color: theme('colors.indigo[500]'),
 				}
 			})
 		})
