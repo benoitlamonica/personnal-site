@@ -3,7 +3,7 @@
     <h1 class="text-5xl sm:text-8xl uppercase font-extrabold bg-gradient-to-t to-indigo-100 from-indigo-200 text-transparent bg-clip-text text-center drop-shadow-xl">
       Out of School {{ currentActiveIndex + 1 }} / 3
     </h1>
-    <div class="text-center">
+    <div class="text-center text-indigo-800 font-extrabold">
       Benoit Lamonica - 2022
     </div>
 
