@@ -2,7 +2,7 @@
   <div
     class="mb-4 font-rale"
   >
-    <h2 class="text-2xl sm:text-5xl mb-8 font-extrabold bg-gradient-to-t to-indigo-800 from-indigo-500 text-transparent bg-clip-text">
+    <h2 class="text-2xl sm:text-5xl mb-8 font-extrabold bg-gradient-to-t to-indigo-800 from-indigo-900 text-transparent bg-clip-text">
       {{ title }}
     </h2>
     <component
@@ -17,15 +17,17 @@
     >
       {{ video ? null : text }}
 
-      <iframe
-        v-if="video"
-        :src="`https://www.youtube.com/embed/${video}`"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class=" w-full h-96"
-      />
+      <div class="overflow-hidden rounded-lg">
+        <iframe
+          v-if="video"
+          :src="`https://www.youtube.com/embed/${video}`"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class=" w-full h-96"
+        />
+      </div>
     </component>
   </div>
 </template>

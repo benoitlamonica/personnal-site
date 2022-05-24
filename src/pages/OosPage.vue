@@ -1,8 +1,8 @@
 <template>
-  <div class="py-4 px-4">
-    <h2 class="text-5xl sm:text-8xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text text-center">
+  <div class="py-4 px-4 bg-indigo-500">
+    <h1 class="text-5xl sm:text-8xl uppercase font-extrabold bg-gradient-to-t to-indigo-100 from-indigo-200 text-transparent bg-clip-text text-center drop-shadow-xl">
       Out of School {{ currentActiveIndex + 1 }} / 3
-    </h2>
+    </h1>
     <div class="text-center">
       Benoit Lamonica - 2022
     </div>
@@ -23,7 +23,7 @@
         Next
       </button>
     </div>
-    <div class="relative overflow-hidden max-w-screen-xl mx-auto rounded-lg shadow-md shadow-indigo-400 mt-20">
+    <div class="relative overflow-hidden max-w-screen-xl mx-auto rounded-lg shadow-md shadow-indigo-800 mt-20">
       <transition-group
         enter-active-class="transition duration-1000"
         :enter-from-class="`transform ${direction === 'next' && 'translate-x-full'} ${direction === 'previous' && '-translate-x-full'}`"
