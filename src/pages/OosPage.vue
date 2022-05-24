@@ -1,13 +1,13 @@
 <template>
   <div class="py-4 px-4">
-    <h2 class="text-8xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text text-center">
+    <h2 class="text-5xl sm:text-8xl uppercase font-extrabold bg-gradient-to-t to-indigo-500 from-indigo-400 text-transparent bg-clip-text text-center">
       Out of School {{ currentActiveIndex + 1 }} / 3
     </h2>
     <div class="text-center">
       Benoit Lamonica - 2022
     </div>
 
-    <div class="flex justify-between items-center m-auto fixed inset-8">
+    <div class="flex justify-between items-center m-auto fixed top-32 left-2 right-2 sm:inset-8 z-50">
       <button
         v-if="currentActiveIndex > 0"
         class="mr-auto p-4 bg-indigo-600 text-white font-extrabold rounded shadow-sm shadow-indigo-900"
